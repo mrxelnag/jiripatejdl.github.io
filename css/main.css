@@ -1,0 +1,381 @@
+:root {
+    --bg-sudy: #F3FCEE;
+    --bg-lichy: #0C6291;
+    --bg-navbar: rgba(87, 115, 153, 0.9);
+    --bg-section-splitter: rgb(0, 0, 0);
+    --bg-footer: #707070;
+    --clr-navlink-active-text: white;
+
+    --default-font: "M PLUS 1 Code", serif;
+    --main-text-color: #ffff;
+    --off-text-color: #000004;
+    --clr-icons: #000004;
+    --clr-navlink-text: #B56576;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+section {
+    border-bottom: 0.4em solid var(--bg-section-splitter);
+}
+
+footer {
+    background: var(--bg-footer);
+}
+
+.lichy {
+    background: var(--bg-lichy);
+}
+
+.sudy {
+    background: var(--bg-sudy);
+
+}
+.sudy p{
+    color: var(--off-text-color);
+}
+.lichy p{
+    color: var(--main-text-color)
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+ion-icon {
+    font-size: 7rem;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: var(--bg-navbar);
+    border-bottom: 0.2em solid var(--bg-section-splitter);
+    font-family: var(--default-font);
+    font-size: 2.2rem;
+
+    position: fixed;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: var(--clr-navlink-text);
+    text-shadow: 1px 1px black;
+    font-weight: 1000;
+}
+
+.navbar li {
+    padding-inline: 0.55em;
+}
+
+.active {
+    color: var(--clr-navlink-active-text) !important;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.nav-link:hover {
+    color: var(--clr-navlink-active-text)
+}
+
+.navIcon img {
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.navbar-toggler {
+    text-align: right;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.navLogo {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+/*HOMEPAGE*/
+#homepage {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.homepageGrid {
+    align-items: center;
+    height: 100%;
+}
+
+.profileText h1 {
+    color: var(--main-text-color);
+    font-size: 8rem;
+    text-shadow: 2px 1px black;
+    white-space: nowrap;
+}
+
+.profileText h4 {
+    color: #B56576;
+    font-size: 2.25rem;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+}
+
+.profilePicture {
+    border-right: 0.5em solid #001B2E;
+}
+
+.profilePicture img {
+    border: 0.5em solid #000004;
+    border-radius: 10%;
+}
+
+/*typewriter*/
+
+/*Dovednosnti*/
+.dovednostiRow {
+    padding: 1em;
+}
+
+#dovednosti {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 10em 0em 5em 0em;
+}
+
+#dovednosti h2 {
+    color: var(--off-text-color);
+}
+
+#dovednosti p {
+    color: var(--off-text-color);
+}
+
+.dovednost {
+    padding-bottom: 5em;
+}
+
+.dovednostiText {
+    justify-content: center;
+    margin: auto;
+    max-width: 80em;
+}
+
+#dovednosti .heading-underline {
+    background-color: var(--bg-lichy);
+}
+
+/*Projekty*/
+#projekty {
+    color: var(--main-text-color);
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+}
+
+#projekty h2 {
+    text-shadow: 2px 1px black;
+}
+
+#projekty .heading-underline {
+    background-color: var(--off-text-color);
+}
+
+.projektNaheld {
+    position: relative;
+}
+
+.projekt {
+    border: 0.3em solid black;
+}
+
+.projektJmenoDiv {
+    position: absolute;
+    bottom: 0px;
+    height: 20%;
+    width: 100%;
+    padding: 0.5em 0 0em 0;
+    background: rgba(37, 38, 39, 0.87);
+    transition: height 1.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projekt:hover .projektJmenoDiv {
+    height: 100%;
+
+}
+
+.projektJmeno {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: 1.2s;
+    padding-bottom: 0px;
+}
+
+.projekt:hover .projektJmeno {
+    font-size: 3rem;
+    padding-bottom: 2em;
+}
+
+.sipkaOdkaz {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    opacity: 0;
+    margin-top: 3em;
+    transition: 1.2s;
+
+}
+
+.sipkaOdkaz ion-icon {
+    font-size: 6em;
+    color: #F3FCEE;
+}
+
+.projekt:hover .sipkaOdkaz {
+    opacity: 1;
+}
+
+/*Kontakt*/
+.kontaktDiv {
+    padding-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kontakt {
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+}
+
+
+#kontakt .heading-underline {
+    width: 9em;
+    background-color: var(--bg-lichy);
+}
+
+.kontaktTitle {
+    text-align: center;
+}
+
+.kontaktDiv ion-icon {
+    font-size: 3rem;
+    color: var(--off-text-color);
+}
+
+.ikona {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconText {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    color: var(--off-text-color);
+}
+
+/*Footer*/
+.footerDiv {
+    padding-top: 1em;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+/*Globání pro projekt*/
+.heading-underline {
+    margin: 0 auto;
+    display: block;
+    height: 0.3em;
+    width: 15em;
+    background: #000004;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+}
+
+.imgResponsive {
+    margin: auto;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.bgAnimace {
+    background-image: url(../img/work.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+
+.meziSekce {
+    height: 10vh;
+    padding: 0;
+    background-color: black;
+    background-image: url(../img/bgSekce2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+/*Změna jazyka*/
+
+/*Responsivita*/
+@media (max-width: 769px) {
+
+    .profilePicture {
+        border-right: none;
+    }
+
+    .heroSection {
+        padding-top: 3em;
+    }
+
+    .homepageGrid {
+        padding-right: 0;
+        padding-left: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
+/*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/

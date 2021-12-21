@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--dodělat meta tagy-->
+  <!--dodělat sitemapu, dodělat robot.txt-->
+  <!--dodělat javascript:scrollTo (href aby se neposraly linky)-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="Jiři Patejdl │ Web Design">
+  <meta name="description" content="Profesionální webové stránky na míru! ">
+  <meta name="keywords"
+    content="design, coding, internetové stránky, webové stránky, webové stránky na míru, beroun, loděnice, praha, prague, loděnice u berouna">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Czech">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Jiří Patedl">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animace.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1+Code">
+
+  <title>Jiři Patejdl │ Web Design</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<!--dodělat nav.active offset-->
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navigation">
+      <div class="container">
+        <a href="#homepage">
+          <span class=""><img src="img/logo.png" class="navLogo" alt="logo"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navIcon"><img src="img/icon.png" alt="navigační Icona"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#homepage">O mně</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#dovednosti">Moje Dovednosti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#projekty">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#kontakt">Kontakt</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="homepage" class="lichy page-section">
+    <div class="container-row">
+
+      <div class="container heroSection">
+        <div class="row homepageGrid">
+          <div class="col col-12 col-md-6">
+            <div class="profilePicture imgResponsive animeClass animeScaleIn">
+              <img class="img-fluid" src="img/profil.jpg" alt="profilový obrázek">
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 profileText">
+            <h1 class="animeClass animeScaleIn animated.trans-1600">Jiří Patejdl</h1>
+            <div class="heading-underline animeClass animeScaleIn"></div>
+            <div class="animeClass animeFromBottom animated.trans-1600">
+              <h4 class="typewriter1">Webové stránky a grafika na míru!</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam suscipit, reiciendis amet,
+                voluptatum
+                culpa rerum assumenda neque nihil ad quas quo sint porro dolor, cum unde minus recusandae? Animi, velit!
+                Architecto doloremque quibusdam vero obcaecati temporibus iusto totam. Fugiat culpa aliquid, quos
+                perspiciatis molestias adipisci reiciendis hic accusamus praesentium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="meziSekce"></section>
+  <section id="dovednosti" class="sudy page-section bgAnimace">
+    <div class="container">
+      <h2 class="dovednostiTitle animeClass animeScaleIn">Moje dovednosti</h2>
+      <div class="heading-underline animeClass animeScaleIn"></div>
+      <div class="dovednostiText animeClass animeFromBottom">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, numquam ipsum vitae aut laborum
+          incidunt! Odio repudiandae amet cumque non eligendi natus nulla, vero suscipit culpa dolor inventore placeat,
+          provident consequuntur nobis velit? Soluta aspernatur consectetur vero molestias quidem libero praesentium
+          inventore est ipsa error ullam placeat, eius dolor? Ipsam.</p>
+      </div>
+      <div class="row dovednostiRow">
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </span>
+            <p>Responsivní stránky pro všechna zařízení</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="image-outline"></ion-icon>
+            </span>
+            <p>Návrh profesionálního loga</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </span>
+            <p>Profesionální, přesto přátelská komunikace</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="storefront-outline"></ion-icon>
+            </span>
+            <p>Zviditělnění vašeho businesu na google.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="refresh-outline"></ion-icon>
+            </span>
+            <p>Redesign vašeho webu</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </span>
+            <p>Napojení stránek na google analytics.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="share-social-outline"></ion-icon>
+            </span>
+            <p>Správa sociálních sítí</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+          <div>
+            <span class="ikona">
+              <ion-icon name="search-circle-outline"></ion-icon>
+            </span>
+            <p>Profesionální SEO optimalizace</p>
+          </div>
+        </div>
+        <!--redesign-->
+      </div>
+    </div>
+
+  </section>
+  <section id="projekty" class="lichy page-section">
+    <div class="container">
+      <h2 class="kontaktTitle animeClass animeScaleIn">Moje Projekty</h2>
+      <div class="heading-underline animeClass animeScaleIn"></div>
+      <p class="kontaktTitle animeClass animeScaleIn">Prohlédněte si projekty, na kterých jsem pracoval od začátku až do
+        samotného konce.</p>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a href="https://www.autoskolalodenice.cz/" target="_blank">
+            <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
+              <div class="projektNaheld">
+                <div><img src="projects/autoskolalodenice.png" alt="Autoskola Lodenice"
+                    class="projektNahledImg img-fluid"></div>
+                <div class="projektJmenoDiv">
+                  <div>
+                    <h5 class="projektJmeno">Autoškola Loděnice</h5>
+                  </div>
+                  <div class="sipkaOdkaz">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <section id="kontakt" class="sudy page-section">
+    <div class="container">
+      <h2 class="kontaktTitle animeClass animeScaleIn">Kontakt</h2>
+      <div class="heading-underline animeClass animeScaleIn"></div>
+      <p class="kontaktText animeClass animeFromBottom">Pokud máte nějaký dotaz, nebo chcete mít web dle vašich představ?</p>
+      <div class="kontaktDiv animeClass animeFromBottom">
+        <div>
+          <span class="ikona ikonaKontakt">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <span class="iconText">jiri.patejdl@gmail.com</span>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="container footerDiv">
+      <p>Všechna práva vyhrazena. © 2021</p>
+    </div>
+  </footer>
+  <!--Icons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/navlinkAnimation.js"></script>
+  <script type="text/javascript" src="js/animace.js"></script>
+  <!--Close navbar on small devices when clicking somewhere else / on navlink-->
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.closest('#navigation') === null) {
+        $(".navbar-collapse").collapse('hide');
+      }
+    });
+  </script>
+  <script>
+    $('.navbar-collapse a').click(function () {
+      $(".navbar-collapse").collapse('hide');
+    });
+  </script>
+  <script>
+  </script>
+</body>
+
+</html>
