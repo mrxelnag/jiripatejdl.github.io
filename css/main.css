@@ -4,7 +4,7 @@
     --bg-navbar: rgba(87, 115, 153, 0.9);
     --bg-section-splitter: rgb(0, 0, 0);
     --bg-footer: #707070;
-    --clr-navlink-active-text: white;
+    --clr-navlink-active-text: #F3FCEE;
 
     --default-font: "M PLUS 1 Code", serif;
     --main-text-color: #ffff;
@@ -38,10 +38,12 @@ footer {
     background: var(--bg-sudy);
 
 }
-.sudy p{
+
+.sudy p {
     color: var(--off-text-color);
 }
-.lichy p{
+
+.lichy p {
     color: var(--main-text-color)
 }
 
@@ -138,6 +140,15 @@ ion-icon {
 
 }
 
+.profileText2 {
+    padding-top: 1em;
+    justify-content: center;
+    margin: auto;
+    max-width: 50em;
+    font-weight: 500;
+}
+
+
 .profilePicture {
     border-right: 0.5em solid #001B2E;
 }
@@ -154,6 +165,7 @@ ion-icon {
 }
 
 #dovednosti {
+    z-index: 2;
     position: relative;
     text-align: center;
     align-items: center;
@@ -181,6 +193,15 @@ ion-icon {
 
 #dovednosti .heading-underline {
     background-color: var(--bg-lichy);
+}
+
+#dovednosti ion-icon {
+    transition-duration: 1.5s;
+}
+
+#dovednosti ion-icon:hover {
+    color: var(--bg-lichy);
+
 }
 
 /*Projekty*/
@@ -329,12 +350,20 @@ ion-icon {
     overflow: hidden;
 }
 
-.bgAnimace {
-    background-image: url(../img/work.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0 0;
+.cornerSvg {
+    max-width: 2500px;
+}
+
+.bgAnimace-left {
+    position: absolute;
+    left: -50em;
+    z-index: -1;
+}
+
+.bgAnimace-right {
+    position: absolute;
+    right: -50em;
+    z-index: -1;
 }
 
 .meziSekce {
@@ -376,6 +405,8 @@ ion-icon {
     }
 }
 
-
-
-/*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+@media (max-width: 1650px) {
+    .cornerSvg {
+        display: none;
+    }
+}

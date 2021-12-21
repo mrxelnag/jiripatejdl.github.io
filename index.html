@@ -35,7 +35,7 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" id="navigation">
       <div class="container">
-        <a href="#homepage">
+        <a class="navHash" href="#homepage">
           <span class=""><img src="img/logo.png" class="navLogo" alt="logo"></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -45,18 +45,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#homepage">O mně</a>
+              <a class="nav-link navHash active" aria-current="page" href="#homepage">O mně</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#dovednosti">Moje Dovednosti</a>
+              <a class="nav-link navHash" aria-current="page" href="#dovednosti">Moje Dovednosti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#projekty">Projekty</a>
+              <a class="nav-link navHash" aria-current="page" href="#projekty">Projekty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#kontakt">Kontakt</a>
+              <a class="nav-link navHash" aria-current="page" href="#kontakt">Kontakt</a>
             </li>
-
         </div>
       </div>
     </nav>
@@ -67,106 +66,145 @@
         <div class="row homepageGrid">
           <div class="col col-12 col-md-6">
             <div class="profilePicture imgResponsive animeClass animeScaleIn">
-              <img class="img-fluid" src="img/profil.jpg" alt="profilový obrázek">
+              <img class="profilePictureImg img-fluid" src="img/profil.jpg" alt="profilový obrázek">
             </div>
           </div>
           <div class="col col-12 col-md-6 profileText">
             <h1 class="animeClass animeScaleIn animated.trans-1600">Jiří Patejdl</h1>
             <div class="heading-underline animeClass animeScaleIn"></div>
-            <div class="animeClass animeFromBottom animated.trans-1600">
-              <h4 class="typewriter1">Webové stránky a grafika na míru!</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam suscipit, reiciendis amet,
-                voluptatum
-                culpa rerum assumenda neque nihil ad quas quo sint porro dolor, cum unde minus recusandae? Animi, velit!
-                Architecto doloremque quibusdam vero obcaecati temporibus iusto totam. Fugiat culpa aliquid, quos
-                perspiciatis molestias adipisci reiciendis hic accusamus praesentium.</p>
+            <div class="profileText2 animeClass animeFromBottom animated.trans-1600">
+              <h4>Webové stránky a grafika na míru</h4>
+              <p>Jsem studentem vysoké školy, kterého baví stále se zlepšovat <br>a vzdělávat svém oboru. Převážně se zaměřuji na Web Development, grafiku a UX Design. Od roku 2020 pracuji jako Affiliate Administrator, a díky tomu jsem mohl nabrat spoustu zkušeností, které mohu využít při tvorbě svých projektů. Mezi mé silné stránky profesionalita, přátelská komunikace a záruka odvedení kvalitní práce, vedocí ke spokojenosti klienta.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- <div class="homepageWave">
+      <svg id="visual" viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">   
+        <path id="wave1"
+          d="M0 321L45.7 310.2C91.3 299.3 182.7 277.7 274.2 268.8C365.7 260 457.3 264 548.8 266.8C640.3 269.7 731.7 271.3 823 280.5C914.3 289.7 1005.7 306.3 1097 318.2C1188.3 330 1279.7 337 1371.2 332C1462.7 327 1554.3 310 1645.8 308.8C1737.3 307.7 1828.7 322.3 1874.3 329.7L1920 337L1920 401L1874.3 401C1828.7 401 1737.3 401 1645.8 401C1554.3 401 1462.7 401 1371.2 401C1279.7 401 1188.3 401 1097 401C1005.7 401 914.3 401 823 401C731.7 401 640.3 401 548.8 401C457.3 401 365.7 401 274.2 401C182.7 401 91.3 401 45.7 401L0 401Z"
+          fill="#F3FCEE" stroke-linecap="round" stroke-linejoin="miter"></path>
+          <path id="wave2" style="visibility: hidden;"
+          d="M0 254L45.7 267C91.3 280 182.7 306 274.2 313.2C365.7 320.3 457.3 308.7 548.8 308.3C640.3 308 731.7 319 823 311.8C914.3 304.7 1005.7 279.3 1097 267.7C1188.3 256 1279.7 258 1371.2 259.8C1462.7 261.7 1554.3 263.3 1645.8 269C1737.3 274.7 1828.7 284.3 1874.3 289.2L1920 294L1920 401L1874.3 401C1828.7 401 1737.3 401 1645.8 401C1554.3 401 1462.7 401 1371.2 401C1279.7 401 1188.3 401 1097 401C1005.7 401 914.3 401 823 401C731.7 401 640.3 401 548.8 401C457.3 401 365.7 401 274.2 401C182.7 401 91.3 401 45.7 401L0 401Z"
+          fill="#0066FF" stroke-linecap="round" stroke-linejoin="miter"></path>
+      </svg>
+    </div>-->
   </section>
   <section class="meziSekce"></section>
-  <section id="dovednosti" class="sudy page-section bgAnimace">
-    <div class="container">
-      <h2 class="dovednostiTitle animeClass animeScaleIn">Moje dovednosti</h2>
-      <div class="heading-underline animeClass animeScaleIn"></div>
-      <div class="dovednostiText animeClass animeFromBottom">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, numquam ipsum vitae aut laborum
-          incidunt! Odio repudiandae amet cumque non eligendi natus nulla, vero suscipit culpa dolor inventore placeat,
-          provident consequuntur nobis velit? Soluta aspernatur consectetur vero molestias quidem libero praesentium
-          inventore est ipsa error ullam placeat, eius dolor? Ipsam.</p>
+  <section id="dovednosti" class="sudy page-section">
+    <div class="container-row">
+      <div class="cornerSvgs">
+        <div class="cornerSvg bgAnimace-left">
+          <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(459.7599923870141 288.52835107830794)">
+              <path id="blob1"
+                d="M108.6 -99C153.6 -63.6 211.8 -31.8 213.5 1.6C215.1 35.1 160.2 70.2 115.2 99.4C70.2 128.6 35.1 151.8 0.4 151.4C-34.4 151.1 -68.8 127.2 -99.8 98C-130.8 68.8 -158.4 34.4 -168.7 -10.3C-178.9 -54.9 -171.8 -109.8 -140.8 -145.2C-109.8 -180.5 -54.9 -196.3 -11.5 -184.7C31.8 -173.2 63.6 -134.3 108.6 -99"
+                fill="#0C6291"></path>
+            </g>
+            <g>
+              <path id="blob2" style="visibility:hidden"
+                d="M170.3 -159.1C213.3 -127.3 235.6 -63.6 227 -8.6C218.4 46.4 178.9 92.9 135.9 115.4C92.9 137.9 46.4 136.4 -3.9 140.3C-54.2 144.2 -108.4 153.4 -142.3 130.9C-176.1 108.4 -189.5 54.2 -193.3 -3.8C-197.1 -61.8 -191.2 -123.5 -157.3 -155.3C-123.5 -187.2 -61.8 -189.1 0.9 -190C63.6 -191 127.3 -190.9 170.3 -159.1"
+                fill="#0C6291"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="cornerSvg bgAnimace-right">
+          <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(459.7599923870141 288.52835107830794)">
+              <path id="blob1Right"
+                d="M108.6 -99C153.6 -63.6 211.8 -31.8 213.5 1.6C215.1 35.1 160.2 70.2 115.2 99.4C70.2 128.6 35.1 151.8 0.4 151.4C-34.4 151.1 -68.8 127.2 -99.8 98C-130.8 68.8 -158.4 34.4 -168.7 -10.3C-178.9 -54.9 -171.8 -109.8 -140.8 -145.2C-109.8 -180.5 -54.9 -196.3 -11.5 -184.7C31.8 -173.2 63.6 -134.3 108.6 -99"
+                fill="#0C6291"></path>
+            </g>
+            <g>
+              <path id="blob2Right" style="visibility:hidden"
+                d="M170.3 -159.1C213.3 -127.3 235.6 -63.6 227 -8.6C218.4 46.4 178.9 92.9 135.9 115.4C92.9 137.9 46.4 136.4 -3.9 140.3C-54.2 144.2 -108.4 153.4 -142.3 130.9C-176.1 108.4 -189.5 54.2 -193.3 -3.8C-197.1 -61.8 -191.2 -123.5 -157.3 -155.3C-123.5 -187.2 -61.8 -189.1 0.9 -190C63.6 -191 127.3 -190.9 170.3 -159.1"
+                fill="#0C6291"></path>
+            </g>
+          </svg>
+        </div>
       </div>
-      <div class="row dovednostiRow">
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="code-slash-outline"></ion-icon>
-            </span>
-            <p>Responsivní stránky pro všechna zařízení</p>
+      <div class="container">
+        <h2 class="dovednostiTitle animeClass animeScaleIn">Moje dovednosti</h2>
+        <div class="heading-underline animeClass animeScaleIn"></div>
+        <div class="dovednostiText animeClass animeFromBottom">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, numquam ipsum vitae aut laborum
+            incidunt! Odio repudiandae amet cumque non eligendi natus nulla, vero suscipit culpa dolor inventore
+            placeat,
+            provident consequuntur nobis velit? Soluta aspernatur consectetur vero molestias quidem libero praesentium
+            inventore est ipsa error ullam placeat, eius dolor? Ipsam.</p>
+        </div>
+        <div class="row dovednostiRow">
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </span>
+              <p>Responsivní stránky pro všechna zařízení</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="image-outline"></ion-icon>
+              </span>
+              <p>Návrh profesionálního loga</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+              </span>
+              <p>Profesionální, přesto přátelská komunikace</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="storefront-outline"></ion-icon>
+              </span>
+              <p>Zviditělnění na Google Business.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="refresh-outline"></ion-icon>
+              </span>
+              <p>Redesign vašeho webu</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </span>
+              <p>Napojení stránek na Google analytics</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="share-social-outline"></ion-icon>
+              </span>
+              <p>Správa sociálních sítí</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
+            <div>
+              <span class="ikona">
+                <ion-icon name="search-circle-outline"></ion-icon>
+              </span>
+              <p>Profesionální SEO optimalizace</p>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="image-outline"></ion-icon>
-            </span>
-            <p>Návrh profesionálního loga</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="chatbubbles-outline"></ion-icon>
-            </span>
-            <p>Profesionální, přesto přátelská komunikace</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="storefront-outline"></ion-icon>
-            </span>
-            <p>Zviditělnění vašeho businesu na google.</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="refresh-outline"></ion-icon>
-            </span>
-            <p>Redesign vašeho webu</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="analytics-outline"></ion-icon>
-            </span>
-            <p>Napojení stránek na google analytics.</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="share-social-outline"></ion-icon>
-            </span>
-            <p>Správa sociálních sítí</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 animeClass animeFromBottom dovednost">
-          <div>
-            <span class="ikona">
-              <ion-icon name="search-circle-outline"></ion-icon>
-            </span>
-            <p>Profesionální SEO optimalizace</p>
-          </div>
-        </div>
-        <!--redesign-->
       </div>
     </div>
-
   </section>
   <section id="projekty" class="lichy page-section">
     <div class="container">
@@ -175,6 +213,7 @@
       <p class="kontaktTitle animeClass animeScaleIn">Prohlédněte si projekty, na kterých jsem pracoval od začátku až do
         samotného konce.</p>
       <div class="row">
+        <div class="col-12 col-md-4"></div>
         <div class="col-12 col-md-4">
           <a href="https://www.autoskolalodenice.cz/" target="_blank">
             <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
@@ -190,11 +229,12 @@
                   </div>
                 </div>
               </div>
+            </div>
           </a>
         </div>
+        <div class="col-12 col-md-4"></div>
       </div>
     </div>
-
     </div>
     </div>
     </div>
@@ -223,11 +263,54 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!--Bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!--KuteJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+  <script>
+    const tween = KUTE.fromTo(
+      '#blob1', {
+        path: '#blob1'
+      }, {
+        path: '#blob2'
+      }, {
+        repeat: 999,
+        duration: 5000,
+        yoyo: true
+      }
+    ).start();
+  </script>
+  <script>
+    const tween2 = KUTE.fromTo(
+      '#blob1Right', {
+        path: '#blob1Right'
+      }, {
+        path: '#blob2Right'
+      }, {
+        repeat: 999,
+        duration: 5000,
+        yoyo: true
+      }
+    ).start();
+  </script>
+  <!--
+  <script> 
+var tween3 = KUTE.fromTo('#wave1', {path: '#wave1' }, { path: '#wave2' }, {
+        repeat: 999,
+        duration: 5000,
+        yoyo: true
+      }).start();
+  </script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="js/navlinkAnimation.js"></script>
+  <script type="text/javascript" src="js/eyesAnimation"></script>
   <script type="text/javascript" src="js/animace.js"></script>
   <!--Close navbar on small devices when clicking somewhere else / on navlink-->
   <script>
@@ -245,15 +328,16 @@
     // when the DOM is ready
     $(document).ready(function () {
       // get the anchor link buttons
-      const menuBtn = $('.nav-link');
+      const menuBtn = $('.navHash');
       // when each button is clicked
       menuBtn.click(() => {
-        
+
         setTimeout(() => {
-         
+
           removeHash();
-        }, 5);
+        }, 1);
       });
+
       function removeHash() {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
           .search);
