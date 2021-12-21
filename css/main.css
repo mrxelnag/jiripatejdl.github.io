@@ -147,7 +147,6 @@ ion-icon {
     border-radius: 10%;
 }
 
-/*typewriter*/
 
 /*Dovednosnti*/
 .dovednostiRow {
@@ -245,7 +244,7 @@ ion-icon {
     width: 6em;
     height: 6em;
     opacity: 0;
-    margin-top: 3em;
+    margin-top: 0em;
     transition: 1.2s;
 
 }
@@ -257,6 +256,7 @@ ion-icon {
 
 .projekt:hover .sipkaOdkaz {
     opacity: 1;
+    margin-top: 3em;
 }
 
 /*Kontakt*/
