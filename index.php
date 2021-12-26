@@ -284,7 +284,7 @@
       <p class="animeClass animeScaleIn">Prohlédněte si projekty, na kterých jsem pracoval od začátku až do
         samotného konce.</p>
       <div class="row">
-        <div class="col-12 col-lg-4 col-md-6 projektCol">
+        <div class="col-12 col-lg-6 projektCol">
           <a href="https://www.autoskolalodenice.cz/" target="_blank">
             <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
               <div class="projektNaheld">
@@ -302,25 +302,7 @@
             </div>
           </a>
         </div>
-        <div class="col-12 col-lg-4 col-md-6 projektCol">
-          <a href="https://www.autoskolalodenice.cz/" target="_blank">
-            <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
-              <div class="projektNaheld">
-                <div><img src="projects/autoskolalodenice.png" alt="Autoskola Lodenice"
-                    class="projektNahledImg img-fluid"></div>
-                <div class="projektJmenoDiv">
-                  <div>
-                    <h5 class="projektJmeno">Autoškola Loděnice</h5>
-                  </div>
-                  <div class="sipkaOdkaz">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-lg-4 col-md-6 projektCol">
+        <div class="col-12 col-lg-6 projektCol">
           <a href="https://www.autoskolalodenice.cz/" target="_blank">
             <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
               <div class="projektNaheld">
@@ -371,7 +353,6 @@
             <div class="col-12 col-lg-4 mt-3 p-3 contactFormRight">
               <div class="contactFormRightInner">
                 <span class=""><img src="img/logo.png" class="contactLogo" alt="logo"></span>
-
                 <div class="contactFormRightText">
                   <div>
                     <h3>Kde se můžeme potkat?</h3>
