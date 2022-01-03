@@ -54,8 +54,9 @@
 
 
 <body>
+  <!--=======NAVBAR=======-->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top" id="navigation">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navigation" data-scroll-header>
       <div class="container">
         <a class="navHash" href="#homepage">
           <span class=""><img src="img/logo.png" class="navLogo" alt="logo"></span>
@@ -67,26 +68,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link navHash active" aria-current="page" href="#homepage">O mně</a>
+              <a class="nav-link navHash active" data-scroll aria-current="page" href="#homepage">O mně</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navHash" aria-current="page" href="#dovednosti">Moje Dovednosti</a>
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#dovednosti">Moje Dovednosti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navHash" aria-current="page" href="#projekty">Projekty</a>
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#projekty">Projekty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navHash" aria-current="page" href="#kontakt">Kontakt</a>
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#kontakt">Kontakt</a>
             </li>
         </div>
       </div>
     </nav>
   </header>
+  <!--=======HOMEPAGE=======-->
   <section id="homepage" class="lichy page-section">
     <div class="container-row">
       <div class="container heroSection">
         <div class="row homepageGrid">
           <div class="col col-12 col-md-6">
+            <!--=======Dodělat running over border?======= https://codepen.io/alphardex/pen/vYEYGzp -->
             <div class="profilePicture imgResponsive animeClass animeScaleIn">
               <img class="profilePictureImg img-fluid" src="img/profil.jpg" alt="profilový obrázek">
             </div>
@@ -99,7 +102,7 @@
               <p>Jsem studentem vysoké školy, kterého baví stále se zlepšovat a vzdělávat ve svém oboru. Převážně se
                 zaměřuji na Web Development, grafiku a UX Design. Od roku 2020 pracuji jako Affiliate Administrator, a
                 díky tomu jsem mohl nabrat spoustu zkušeností, které mohu využít při tvorbě svých projektů. Mezi mé
-                silné stránky profesionalita, přátelská komunikace a záruka odvedení kvalitní práce, vedocí ke
+                silné stránky patří profesionalita, přátelská komunikace a záruka odvedení kvalitní práce, vedocí ke
                 spokojenosti klienta.</p>
             </div>
           </div>
@@ -108,7 +111,7 @@
     </div>
   </section>
   <section class="meziSekce"></section>
-
+  <!--=======DOVEDNOSTI / CO NABÍZÍM=======-->
   <section id="dovednosti" class="sudy page-section">
     <div class="container-row">
       <div class="cornerSvgs">
@@ -271,6 +274,7 @@
       </div>
     </div>
   </section>
+  <!--=======PROJEKTY=======-->
   <section id="projekty" class="lichy page-section">
     <div class="container">
       <h2 class="animeClass animeScaleIn">Projekty</h2>
@@ -317,6 +321,7 @@
       </div>
     </div>
   </section>
+  <!--=======KONTAKT=======-->
   <section id="kontakt" class="sudy page-section">
     <div class="container">
       <h2 class="kontaktTitle animeClass animeScaleIn">Kontakt</h2>
@@ -380,6 +385,7 @@
       </div>
     </div>
   </section>
+  <!--=======FOOTER=======-->
   <footer>
     <div class="container footerDiv">
       <p>Všechna práva vyhrazena. © 2021</p>
@@ -424,29 +430,26 @@
       }
     ).start();
   </script>
-  <script>
-    const tween3 = KUTE.fromTo(
-      '#blobProfile1', {
-        path: '#blobProfile1'
-      }, {
-        path: '#blobProfile2'
-      }, {
-        repeat: 999,
-        duration: 2000,
-        yoyo: true
-      }
-    ).start();
-  </script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <!--My Scripts-->
+  
   <script type="text/javascript" src="js/navlinkAnimation.js"></script>
+
   <script type="text/javascript" src="js/eyesAnimation"></script>
   <script type="text/javascript" src="js/animace.js"></script>
   <script type="text/javascript" src="js/emailcheck.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <!--Smooth Scroll-->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]',{
+		header: '[data-scroll-header]'
 
+	});
+  </script>
   <!--Close navbar on small devices when clicking somewhere else / on navlink-->
   <script>
     document.addEventListener('click', event => {

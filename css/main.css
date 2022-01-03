@@ -14,15 +14,17 @@
     --bg-lichy: rgb(12, 98, 145);
     --bg-section-splitter: rgb(0, 0, 0);
     --bg-footer: rgb(39, 36, 36);
+    --logo-clr-blue: #004F98;
+    --logo-clr-pink: #B56576;
 }
 
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
-
     overflow-x: hidden;
     position: relative;
 }
@@ -75,14 +77,14 @@ ion-icon {
 }
 
 .nav-link {
-    text-transform: uppercase;
+
     color: var(--clr-navlink-text);
     text-shadow: 1px 1px black;
     font-weight: 1000;
 }
 
 .navbar li {
-    padding-inline: 0.55em;
+    padding-inline: 0.45em;
 }
 
 .active {
@@ -156,17 +158,18 @@ ion-icon {
 
 
 .profilePicture {
-    border-right: 0.5em solid #001B2E;
-    position: relative;  
-      z-index: 1;
+    border-right: 0.5em solid black;
+    position: relative;
+    z-index: 1;
 }
+
+
 
 .profilePicture img {
-    border: 0.5em solid #000004;
+    border: 0.5em solid black;
     border-radius: 10%;
-
+    z-index: 1;
 }
-
 
 /*Dovednosnti*/
 .dovednostiRow {
@@ -179,7 +182,7 @@ ion-icon {
     text-align: center;
     align-items: center;
     height: 100%;
-    padding: 10em 0em 5em 0em;
+    padding: 5em 0em 5em 0em;
 }
 
 #dovednosti h2 {
@@ -213,7 +216,7 @@ ion-icon {
 
 #dovednosti .heading-underline {
     background-color: var(--bg-lichy);
-    width: 30em;
+    width: min(20vw, 30em);
 
 }
 
@@ -229,7 +232,7 @@ ion-icon {
 /*Projekty*/
 #projekty {
     color: var(--main-text-color);
-    padding: 8em 0em 8em 0em;
+    padding: 5em 0em 8em 0em;
     text-align: center;
 }
 
@@ -257,7 +260,7 @@ ion-icon {
 .projektJmenoDiv {
     position: absolute;
     bottom: 0px;
-    height: 20%;
+    height: 15%;
     width: 100%;
     padding: 0.5em 0 0em 0;
     background: rgba(37, 38, 39, 0.87);
@@ -275,13 +278,13 @@ ion-icon {
 .projektJmeno {
     color: white;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     transition: 1.2s;
     padding-bottom: 0px;
 }
 
 .projekt:hover .projektJmeno {
-    font-size: 3rem;
+    font-size: 4rem;
     padding-bottom: 2em;
 }
 
@@ -322,12 +325,17 @@ ion-icon {
 
 
 #kontakt .heading-underline {
-    width: 9em;
+    width: min(20vw, 9em);
     background-color: var(--bg-lichy);
 }
 
 .kontaktTitle {
     text-align: center;
+}
+
+.kontaktText {
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .kontaktDiv ion-icon {
@@ -355,23 +363,27 @@ ion-icon {
     padding: 1em 5em 3em 5em;
 
     background-color: rgb(12, 99, 145);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
     color: var(--main-text-color);
-    
+
 }
-.contactForm p{
+
+.contactForm p {
     color: var(--main-text);
 }
-.contactForm h3{
+
+.contactForm h3 {
     color: var(--clr-navlink-text);
     font-size: 2.5em;
 }
-.contactForm .iconText{
+
+.contactForm .iconText {
     color: var(--main-text-color);
 }
-.contactForm ion-icon{
+
+.contactForm ion-icon {
     color: var(--main-text-color);
 }
 
@@ -381,41 +393,47 @@ ion-icon {
 
 }
 
+.contactFormLeft {
+    padding-right: 3rem;
+}
+
 .contactFormRightInner {
-    padding-left: 2em;
+    padding-left: 2rem;
 }
 
 .contactFormRight {
     border-left: 3px solid rgba(87, 115, 153, 0.672);
     flex-direction: column;
-
-
 }
-.contactLogo{
-   max-height: 100px;
-   max-width: 100px;
+
+.contactLogo {
+    max-height: 100px;
+    max-width: 100px;
 }
-.contactFormRightText{
+
+.contactFormRightText {
     text-align: left;
-
 }
 
 .contactForm .button {
     margin: auto;
     border-radius: none;
-    border:none;
+    border: none;
     background-color: var(--bg-sudy);
     color: var(--off-text-color);
     width: 100%;
     font-size: 2rem;
 
 }
-.contactForm h3{
+
+.contactForm h3 {
     padding: 1.2em 0 0.5em 0;
 }
-.conctactFromSocials span{
+
+.conctactFromSocials span {
     padding: 0 2em 0 0em
 }
+
 #kontakt ion-icon {
     transition-duration: 1.5s;
     font-weight: bold;
@@ -438,6 +456,10 @@ ion-icon {
     border-bottom: 2px solid rgba(87, 115, 153, 0.5)
 }
 
+textarea {
+    resize: none;
+}
+
 input:focus,
 textarea:focus,
 select:focus,
@@ -447,7 +469,6 @@ button:focus {
 
 .form-control::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
     opacity: 1;
     /* Firefox */
     font-size: 1.5rem;
@@ -485,12 +506,14 @@ button:focus {
 
 .bgAnimace-left {
     position: absolute;
+    top: 50vh;
     left: -50em;
     z-index: -1;
 }
 
 .bgAnimace-right {
     position: absolute;
+    top: 50vh;
     right: -50em;
     z-index: -1;
 }
@@ -532,7 +555,6 @@ button:focus {
         text-align: center;
         align-items: center;
     }
-
     .profilePicture {
         border-right: none;
     }
@@ -540,10 +562,43 @@ button:focus {
     .dovednostObsah p {
         text-align: center;
     }
+
+    .contactFormRight {
+        border: none;
+
+    }
+
+    .contactFormLeft .button {
+        margin-bottom: 1em;
+    }
+
+    .contactLogo {
+        max-height: 8rem;
+        max-width: 8rem;
+    }
+
+    .contactForm {
+        padding: 2em;
+    }
+
+    .contactFormRightInner {
+        padding: 0;
+    }
+
+    .contactFormLeft {
+        padding: 0;
+    }
+
+    .profileText h1 {
+        font-size: min(8em, 20vw)
+    }
+
 }
 
 @media (max-width: 1650px) {
-    .cornerSvg {
+    .cornerSvgs {
         display: none;
     }
 }
+
+

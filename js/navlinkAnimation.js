@@ -23,7 +23,7 @@ $(window).scroll(function () {
   $('.page-section').each(function (i) {
 
     if ($(this).position().top <=
-      distance + 800) {
+      distance + 300) {
 
       $('.navbar-nav a.active')
         .removeClass('active');
