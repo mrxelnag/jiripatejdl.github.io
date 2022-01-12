@@ -2,7 +2,6 @@
 link on clicking */
 var btns =
   $("#navigation .navbar-nav .nav-link");
-
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click",
     function () {
@@ -18,10 +17,11 @@ for (var i = 0; i < btns.length; i++) {
 
 /* Code for changing active 
 link on Scrolling */
+
 $(window).scroll(function () {
   var distance = $(window).scrollTop();
+  
   $('.page-section').each(function (i) {
-
     if ($(this).position().top <=
       distance + 300) {
 
@@ -30,6 +30,9 @@ $(window).scroll(function () {
 
       $('.navbar-nav a').eq(i)
         .addClass('active');
+      
     }
   });
 }).scroll();
+
+

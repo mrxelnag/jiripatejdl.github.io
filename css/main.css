@@ -13,11 +13,12 @@
     --bg-sudy: #F3FCEE;
    
    /* --bg-lichy: rgb(12, 98, 145);*/
-    --bg-lichy: rgb(10, 34, 65);
+    --bg-lichy: rgb(10, 35, 66);
     --bg-section-splitter: rgb(0, 0, 0);
     --bg-footer: rgb(39, 36, 36);
     --logo-clr-blue: #004F98;
     --logo-clr-pink: #B56576;
+    scroll-behavior: auto !important; 
 }
 
 html {
@@ -27,7 +28,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -39,16 +39,12 @@ footer {
     background: var(--bg-footer);
     color: var(--bg-sudy);
 }
-
 .lichy {
     background: var(--bg-lichy);
 }
-
 .sudy {
     background: var(--bg-sudy);
-
 }
-
 .sudy p {
     color: var(--off-text-color);
 }
@@ -89,7 +85,7 @@ ion-icon {
     padding-inline: 0.45em;
 }
 
-.active {
+.nav-link:focus, .active {
     color: var(--clr-navlink-active-text) !important;
     text-decoration: underline;
     text-underline-position: under;
@@ -113,7 +109,6 @@ ion-icon {
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
-
 }
 
 .navLogo {
@@ -203,9 +198,11 @@ ion-icon {
 }
 
 .dovednost h3 {
+    
     font-weight: bold;
     font-size: 3em;
     padding-bottom: 0.5em;
+
 }
 
 .dovednostiText {
@@ -281,7 +278,7 @@ ion-icon {
 }
 
 .projektJmeno {
-    color: white;
+    color: var(--main-text-color);
     font-weight: 600;
     font-size: 2.4rem;
     transition: 1.2s;
@@ -307,7 +304,7 @@ ion-icon {
 
 .sipkaOdkaz ion-icon {
     font-size: 6em;
-    color: #F3FCEE;
+    color: var(--main-text-color);
 }
 
 .projekt:hover .sipkaOdkaz {
@@ -534,6 +531,19 @@ button:focus {
     background-size: 100%;
 
 }
+/*
+.waveTop{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    top: 0;
+}
+.waveBottom{
+    position: absolute;  
+    width: 100%;
+    bottom: 0;
+}
+*/
 
 /*Změna jazyka*/
 

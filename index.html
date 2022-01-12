@@ -4,7 +4,7 @@
 <head>
   <!--dodělat meta tagy-->
   <!--dodělat sitemapu, dodělat robot.txt-->
-  <!--dodělat nav.active offset-->
+  <!--je v piči smooth scroll na google (je to bootstrap pětkou)-->
 
   <!--=======Basic Website Tags=======-->
   <meta charset="UTF-8">
@@ -32,9 +32,8 @@
   <meta property="og:description" content=".">
 
   <!--=======Bootstrap CSS=======-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
   <!--=======CSS=======-->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animace.css">
@@ -85,12 +84,10 @@
   </header>
   <!--=======HOMEPAGE=======-->
   <section id="homepage" class="lichy page-section">
-
     <div class="container-row">
       <div class="container heroSection">
         <div class="row homepageGrid">
           <div class="col col-12 col-md-6">
-            <!--=======Dodělat running over border?======= https://codepen.io/alphardex/pen/vYEYGzp -->
             <div class="profilePicture imgResponsive animeClass animeScaleIn">
               <img class="profilePictureImg img-fluid" src="img/profil.jpg" alt="profilový obrázek">
             </div>
@@ -112,8 +109,16 @@
     </div>
   </section>
   <section class="meziSekce"></section>
-  <!--=======DOVEDNOSTI / CO NABÍZÍM=======-->
+   <!--=======DOVEDNOSTI=======-->
   <section id="dovednosti" class="sudy page-section">
+    <!--
+    <div class="waveTop">
+      <svg id="visual" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 77L21.5 76C43 75 86 73 128.8 74C171.7 75 214.3 79 257.2 80.3C300 81.7 343 80.3 385.8 80C428.7 79.7 471.3 80.3 514.2 79.7C557 79 600 77 642.8 77.3C685.7 77.7 728.3 80.3 771.2 79.3C814 78.3 857 73.7 878.5 71.3L900 69L900 101L878.5 101C857 101 814 101 771.2 101C728.3 101 685.7 101 642.8 101C600 101 557 101 514.2 101C471.3 101 428.7 101 385.8 101C343 101 300 101 257.2 101C214.3 101 171.7 101 128.8 101C86 101 43 101 21.5 101L0 101Z" fill="#0a2342" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    </div>
+    <div class="waveBottom">
+      <svg id="visual" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 77L21.5 76C43 75 86 73 128.8 74C171.7 75 214.3 79 257.2 80.3C300 81.7 343 80.3 385.8 80C428.7 79.7 471.3 80.3 514.2 79.7C557 79 600 77 642.8 77.3C685.7 77.7 728.3 80.3 771.2 79.3C814 78.3 857 73.7 878.5 71.3L900 69L900 101L878.5 101C857 101 814 101 771.2 101C728.3 101 685.7 101 642.8 101C600 101 557 101 514.2 101C471.3 101 428.7 101 385.8 101C343 101 300 101 257.2 101C214.3 101 171.7 101 128.8 101C86 101 43 101 21.5 101L0 101Z" fill="#0a2342" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    </div>
+    -->
     <div class="container-row">
       <div class="cornerSvgs">
         <div class="bgAnimace-left">
@@ -159,7 +164,7 @@
               <h3 class="dovednostNadpis">Webdesign - BASIC</h3>
               <p>Chcete li jednoduchou stránku pro Vaši službu, tak služba "Webdesign - BASIC" je to ideální pro Vás.
                 Připravím jednoduchou stránku,
-                která bude vyhovovat Vašim požadavdkům a bude elegantně prezentovat vaši službu.
+                která bude vyhovovat Vašim požadavdkům a bude elegantně prezentovat Vaši službu či produkt.
               </p>
             </div>
           </div>
@@ -169,7 +174,8 @@
                 <ion-icon name="code-slash-outline"></ion-icon>
               </span>
               <h3 class="dovednostNadpis">Webdesign - PRO</h3>
-              <p>Pokud provozujete větší byznys, jako je například restaurace, bude pro Vás služba "Webdesign - PRO"
+              <p>Pokud provozujete větší byznys, jako je například restaurace či hotel, bude pro Vás služba "Webdesign -
+                PRO"
                 ideálním řešením. Připravím pro Vás rozsáhlou webovou stánku
                 se všemi potřebnými informacemi o jakémkoliv byznysu. Tato služba je tedy ideální pro rozsáhlejší weby,
                 které obsahují více podstránek, propracované grafické zpracování a pokročilejší animace, efekty a
@@ -196,8 +202,8 @@
               <h3 class="dovednostNadpis">Redesign Vašeho webu</h3>
               <p>Máte zastaralý web, na který jsou uživatelé zvyklí, ale myslíte si, že by ocenil nádech novodobého
                 stylu? Pak je tato služba ideální pro Vás. Vaše nová stránka bude z velké části inspirována tou původní
-                avšak bude mít nádech moderních stránek. Toho dosáhneme například přidáním animací, gradientů a využitím
-                nových technologii, které například pře lety nebyly dostupné.</p>
+                avšak bude mít nádech moderní doby. Toho dosáhneme například přidáním animací, gradientů a využitím
+                nových technologii, které například před lety nebyly dostupné.</p>
             </div>
           </div>
           <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
@@ -208,7 +214,7 @@
               <h3 class="dovednostNadpis">Komunikace</h3>
               <p>V dnešní době je splehlivá komunikace základem. Pokud se rozhodnete o využití jakékoliv z mnou
                 nabízených služeb, můžete očekávat pravidelnou a profesionální komunikaci. Stačí si jen vybrat, která
-                pro vás bude nejpohodlnější, zda li Email, WhatsUp či Telefonicky/SMS).
+                pro vás bude nejpohodlnější, zda li Email, WhatsUp či Telefonicky/SMS.
               </p>
             </div>
           </div>
@@ -285,7 +291,7 @@
       <div class="row">
         <div class="col-12 col-lg-6 projektCol">
           <a href="https://www.autoskolalodenice.cz/" target="_blank">
-            <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
+            <div class="animeClass animeFromBottom projekt" target="_blank">
               <div class="projektNaheld">
                 <div><img src="projects/autoskolalodenice.png" alt="Autoskola Lodenice"
                     class="projektNahledImg img-fluid"></div>
@@ -302,22 +308,6 @@
           </a>
         </div>
         <div class="col-12 col-lg-6 projektCol">
-          <a href="https://www.autoskolalodenice.cz/" target="_blank">
-            <div class="animeClass animeFromBottom projekt" href="https://www.autoskolalodenice.cz/" target="_blank">
-              <div class="projektNaheld">
-                <div><img src="projects/autoskolalodenice.png" alt="Autoskola Lodenice"
-                    class="projektNahledImg img-fluid"></div>
-                <div class="projektJmenoDiv">
-                  <div>
-                    <h5 class="projektJmeno">Autoškola Loděnice</h5>
-                  </div>
-                  <div class="sipkaOdkaz">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </div>
@@ -389,16 +379,14 @@
   <!--=======FOOTER=======-->
   <footer>
     <div class="container footerDiv">
-      <p>Všechna práva vyhrazena. © 2021</p>
+      <p>Všechna práva vyhrazena. © 2022</p>
     </div>
   </footer>
   <!--Icons-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!--Bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- jQuery-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -417,8 +405,6 @@
         yoyo: true
       }
     ).start();
-  </script>
-  <script>
     const tween2 = KUTE.fromTo(
       '#blob1Right', {
         path: '#blob1Right'
@@ -435,20 +421,14 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <!--My Scripts-->
-
   <script type="text/javascript" src="js/navlinkAnimation.js"></script>
-
-  <script type="text/javascript" src="js/eyesAnimation"></script>
   <script type="text/javascript" src="js/animace.js"></script>
   <script type="text/javascript" src="js/emailcheck.js"></script>
-  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <!--Smooth Scroll-->
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
-  </script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]', {
       header: '[data-scroll-header]'
-
     });
   </script>
   <!--Close navbar on small devices when clicking somewhere else / on navlink-->
