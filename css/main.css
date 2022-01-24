@@ -161,9 +161,6 @@ ion-icon {
     position: relative;
     z-index: 1;
 }
-
-
-
 .profilePicture img {
     border: 0.5em solid black;
     border-radius: 10%;
@@ -508,14 +505,14 @@ button:focus {
 
 .bgAnimace-left {
     position: absolute;
-    top: 50vh;
+    top: 50%;
     left: -50em;
     z-index: -1;
 }
 
 .bgAnimace-right {
     position: absolute;
-    top: 50vh;
+    top: 30%;
     right: -50em;
     z-index: -1;
 }
@@ -525,7 +522,8 @@ button:focus {
     padding: 0;
     background-color: black;
     background-image: url(../img/bgSekce2.jpg);
-    background-position: center;
+    background-position: bottom;
+    background-size: contain;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -590,6 +588,13 @@ button:focus {
     .contactLogo {
         max-height: 8rem;
         max-width: 8rem;
+    }
+    .contactFormRightText{
+        text-align: center;
+    }
+   
+    .conctactFromSocials span {
+        padding: 0 1em 0 1em
     }
 
     .contactForm {
