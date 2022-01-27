@@ -8,7 +8,7 @@
     --off-text-color: #000004;
     --clr-icons: #000004;
     --clr-navlink-active-text: #F3FCEE;
-    --clr-navlink-text: #B56576;
+    --clr-navlink-text: #D64045;
     --bg-navbar: rgba(1, 9, 18, 0.8);
     --bg-sudy: #F3FCEE;
    
@@ -17,7 +17,7 @@
     --bg-section-splitter: rgb(0, 0, 0);
     --bg-footer: rgb(39, 36, 36);
     --logo-clr-blue: #004F98;
-    --logo-clr-pink: #B56576;
+    --logo-clr-pink: #D64045;
     scroll-behavior: auto !important; 
 }
 
@@ -138,7 +138,7 @@ ion-icon {
 }
 
 .profileText h4 {
-    color: #B56576;
+    color: var(--clr-navlink-text);
     font-size: 2.25rem;
     text-shadow: 2px 1px black;
     font-weight: bold;
