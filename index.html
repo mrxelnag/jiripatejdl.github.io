@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--dodělat meta tagy-->
+  <!--dodělat sitemapu, dodělat robot.txt-->
+  <!--je v piči smooth scroll na google (je to bootstrap pětkou)-->
+
+  <!--=======Basic Website Tags=======-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Jiři Patejdl │ Web Design">
+  <meta name="description" content="Profesionální webové stránky na míru! ">
+  <meta name="keywords"
+    content="design, coding, internetové stránky, webové stránky, webové stránky na míru, beroun, loděnice, praha, prague, loděnice u berouna">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Czech">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Jiří Patedl">
+  <title>Jiři Patejdl │ Web Design</title>
+
+  <!--=======FB OG=======-->
+  <link rel="canonical" href="https://www.jiripatejdl.cz/">
+  <meta property="og:title" content="   ">
+  <meta property="og:type" content="website">
+
+  <!--doplň doménu-->
+  <meta property="og:url" content="https://jiripatejdl.cz/">
+  <meta property="og:image" content="http://jiripatejdl.cz//imgs/logo.svg">
+  <meta property="og:description" content=".">
+
+  <!--=======Bootstrap CSS=======-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--=======CSS=======-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animace.css">
+
+  <!--=======Fonts=======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--=======favIcon=======-->
+  <link rel="icon" href="img/faviconNew.ico" type="image/x-icon" />
+</head>
+
+
+<body>
+  <!--=======NAVBAR=======-->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navigation" data-scroll-header>
+      <div class="container">
+        <a class="navHash" href="#homepage">
+          <span class=""><img src="img/logoNew.png" class="navLogo" alt="logo"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navIcon"><img src="img/icon.png" alt="navigační Icona"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navHash active" data-scroll aria-current="page" href="#homepage">O mně</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#dovednosti">Moje Dovednosti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#projekty">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navHash" data-scroll aria-current="page" href="#kontakt">Kontakt</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--=======HOMEPAGE=======-->
+  <section id="homepage" class="lichy page-section">
+    <div class="container-row">
+      <div class="container heroSection">
+        <div class="row homepageGrid">
+          <div class="col col-12 col-md-6">
+            <div class="profilePicture imgResponsive animeClass animeScaleIn">
+              <img class="profilePictureImg img-fluid" src="img/profil.jpg" alt="profilový obrázek">
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 profileText">
+            <h1 class="animeClass animeScaleIn animated.trans-1600">Jiří Patejdl</h1>
+            <div class="heading-underline animeClass animeScaleIn"></div>
+            <div class="profileText2 animeClass animeFromBottom animated.trans-1600">
+              <h4>Webové stránky a grafika na míru</h4>
+              <p>Jsem studentem vysoké školy, kterého baví stále se zlepšovat a vzdělávat ve svém oboru. Převážně se
+                zaměřuji na Web Development, grafiku a UX Design. Od roku 2020 pracuji jako Affiliate Administrator, a
+                díky tomu jsem mohl nabrat spoustu zkušeností, které mohu využít při tvorbě svých projektů. Mezi mé
+                silné stránky patří profesionalita, přátelská komunikace a záruka odvedení kvalitní práce, vedocí ke
+                spokojenosti klienta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="splitSection"></section>
+  <!--=======DOVEDNOSTI=======-->
+  <section id="dovednosti" class="sudy page-section">
+    <!--
+    <div class="waveTop">
+      <svg id="visual" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 77L21.5 76C43 75 86 73 128.8 74C171.7 75 214.3 79 257.2 80.3C300 81.7 343 80.3 385.8 80C428.7 79.7 471.3 80.3 514.2 79.7C557 79 600 77 642.8 77.3C685.7 77.7 728.3 80.3 771.2 79.3C814 78.3 857 73.7 878.5 71.3L900 69L900 101L878.5 101C857 101 814 101 771.2 101C728.3 101 685.7 101 642.8 101C600 101 557 101 514.2 101C471.3 101 428.7 101 385.8 101C343 101 300 101 257.2 101C214.3 101 171.7 101 128.8 101C86 101 43 101 21.5 101L0 101Z" fill="#0a2342" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    </div>
+    <div class="waveBottom">
+      <svg id="visual" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 77L21.5 76C43 75 86 73 128.8 74C171.7 75 214.3 79 257.2 80.3C300 81.7 343 80.3 385.8 80C428.7 79.7 471.3 80.3 514.2 79.7C557 79 600 77 642.8 77.3C685.7 77.7 728.3 80.3 771.2 79.3C814 78.3 857 73.7 878.5 71.3L900 69L900 101L878.5 101C857 101 814 101 771.2 101C728.3 101 685.7 101 642.8 101C600 101 557 101 514.2 101C471.3 101 428.7 101 385.8 101C343 101 300 101 257.2 101C214.3 101 171.7 101 128.8 101C86 101 43 101 21.5 101L0 101Z" fill="#0a2342" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    </div>
+    -->
+    <div class="container-row">
+      <div class="cornerSvgs">
+        <div class="bgAnimace-left">
+          <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(459.7599923870141 288.52835107830794)">
+              <path id="blob1"
+                d="M108.6 -99C153.6 -63.6 211.8 -31.8 213.5 1.6C215.1 35.1 160.2 70.2 115.2 99.4C70.2 128.6 35.1 151.8 0.4 151.4C-34.4 151.1 -68.8 127.2 -99.8 98C-130.8 68.8 -158.4 34.4 -168.7 -10.3C-178.9 -54.9 -171.8 -109.8 -140.8 -145.2C-109.8 -180.5 -54.9 -196.3 -11.5 -184.7C31.8 -173.2 63.6 -134.3 108.6 -99"
+                fill="#0a2241"></path>
+            </g>
+            <g>
+              <path id="blob2" style="visibility:hidden"
+                d="M170.3 -159.1C213.3 -127.3 235.6 -63.6 227 -8.6C218.4 46.4 178.9 92.9 135.9 115.4C92.9 137.9 46.4 136.4 -3.9 140.3C-54.2 144.2 -108.4 153.4 -142.3 130.9C-176.1 108.4 -189.5 54.2 -193.3 -3.8C-197.1 -61.8 -191.2 -123.5 -157.3 -155.3C-123.5 -187.2 -61.8 -189.1 0.9 -190C63.6 -191 127.3 -190.9 170.3 -159.1"
+                fill="#0a2241"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="cornerSvg bgAnimace-right">
+          <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(459.7599923870141 288.52835107830794)">
+              <path id="blob1Right"
+                d="M108.6 -99C153.6 -63.6 211.8 -31.8 213.5 1.6C215.1 35.1 160.2 70.2 115.2 99.4C70.2 128.6 35.1 151.8 0.4 151.4C-34.4 151.1 -68.8 127.2 -99.8 98C-130.8 68.8 -158.4 34.4 -168.7 -10.3C-178.9 -54.9 -171.8 -109.8 -140.8 -145.2C-109.8 -180.5 -54.9 -196.3 -11.5 -184.7C31.8 -173.2 63.6 -134.3 108.6 -99"
+                fill="#0a2241"></path>
+            </g>
+            <g>
+              <path id="blob2Right" style="visibility:hidden"
+                d="M170.3 -159.1C213.3 -127.3 235.6 -63.6 227 -8.6C218.4 46.4 178.9 92.9 135.9 115.4C92.9 137.9 46.4 136.4 -3.9 140.3C-54.2 144.2 -108.4 153.4 -142.3 130.9C-176.1 108.4 -189.5 54.2 -193.3 -3.8C-197.1 -61.8 -191.2 -123.5 -157.3 -155.3C-123.5 -187.2 -61.8 -189.1 0.9 -190C63.6 -191 127.3 -190.9 170.3 -159.1"
+                fill="#0a2241"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="dovednostiTitle animeClass animeScaleIn">Co vám můžu nabídnout?</h2>
+        <div class="heading-underline animeClass animeScaleIn"></div>
+        <div class="row dovednostiRow">
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Webdesign - BASIC</h3>
+              <p>Chcete li jednoduchou stránku pro Vaši službu, tak služba "Webdesign - BASIC" je to ideální pro Vás.
+                Připravím jednoduchou stránku,
+                která bude vyhovovat Vašim požadavdkům a bude elegantně prezentovat Vaši službu či produkt.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Webdesign - PRO</h3>
+              <p>Pokud provozujete větší byznys, jako je například restaurace či hotel, bude pro Vás služba "Webdesign -
+                PRO"
+                ideálním řešením. Připravím pro Vás rozsáhlou webovou stánku
+                se všemi potřebnými informacemi o jakémkoliv byznysu. Tato služba je tedy ideální pro rozsáhlejší weby,
+                které obsahují více podstránek, propracované grafické zpracování a pokročilejší animace, efekty a
+                funkce.
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="image-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Logo & Grafický Design</h3>
+              <p>Pokud zakládáte firmu, menší byznys, či startujete nový projekt, jednou z nejdůležitějších věcí je mít
+                ikonické a profesionální logo, které bude reprezentovat Vaše hodnoty.
+                Vytvořím Vám logo na míru, včetně návrhů vizitky, reklamích bannerů či plakátů.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="refresh-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Redesign Vašeho webu</h3>
+              <p>Máte zastaralý web, na který jsou uživatelé zvyklí, ale myslíte si, že by ocenil nádech novodobého
+                stylu? Pak je tato služba ideální pro Vás. Vaše nová stránka bude z velké části inspirována tou původní
+                avšak bude mít nádech moderní doby. Toho dosáhneme například přidáním animací, gradientů a využitím
+                nových technologii, které například před lety nebyly dostupné.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Komunikace</h3>
+              <p>V dnešní době je splehlivá komunikace základem. Pokud se rozhodnete o využití jakékoliv z mnou
+                nabízených služeb, můžete očekávat pravidelnou a profesionální komunikaci. Stačí si jen vybrat, která
+                pro vás bude nejpohodlnější, zda li Email, WhatsUp či Telefonicky/SMS.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah"> <span class="ikona">
+                <ion-icon name="share-social-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Správa sociálních sítí</h3>
+              <p>V dnešní době se kolem sociálních točí celý svět. Pokud jsou soc. sítě pro Vás jedna velká neznámá, či
+                víte jak se na nich pohybovat, ale nevíte si rady jak začít propagovat váš byznys, jsem tu pro Vás.
+                Založím Vám, nebo budu spravovat všechny sociální sítě, na kterých lze propagovat Váš byznys, jako je
+                naříklad Facebook, či Instagram. Postarám se o zviditelnění, nastavení profilů a také o přidávání
+                příspěvků či přiběhů(Stories).</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah">
+              <span class="ikona">
+                <ion-icon name="storefront-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Zviditělnění na Google Business.</h3>
+              <p>Google Bussines je služba, kterou nabízí Google pro jakoukoliv firmu, restauraci či podnik. V případě
+                že napříkald firma tuto službu používá, je to hned to první co uvidíte po pravé straně, po tom co
+                vyfirmu vyhledáte na Google. Můžete vidět sídlo společnosti, hodnocení a recenze uživatelů, otevírací
+                doby, atd. Tuto službu si můžete jednoduše sami spravovat v mobilní applikaci, se kterou Vás můžu
+                naučit.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah"> <span class="ikona">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Napojení stránek na Google Analytics</h3>
+              <p>Google Anylytics je služba, kterou nabízí Google pro sledování určitých metrik o webové stránce, jako
+                je například průměrný strávený čás, počet uživatelů co ji navštivili a kolikrát, a mnoho dalšího.
+              </p>
+            </div>
+          </div>
+          <!--
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah"> <span class="ikona">
+                <ion-icon name="search-circle-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">OnPage SEO optimalizace</h3>
+              <p>Kaž</p>
+            </div>
+          </div>
+          -->
+          <div class="col-12 col-lg-6 animeClass animeFromBottom dovednost">
+            <div class="dovednostObsah"> <span class="ikona">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <h3 class="dovednostNadpis">Technická podpora</h3>
+              <p>Pro každý vytvořený web je důležitá pravidelná údržba. Poradím Vám s výběrem hostingu, či výběrem
+                vhodné domény i s její registrací. Samozřejmostí je také vytvoření emailové schránky a také emailového
+                klienta.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="row dovednostiRow">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=======PROJEKTY=======-->
+  <section id="projekty" class="lichy page-section">
+    <div class="container">
+      <h2 class="animeClass animeScaleIn">Projekty</h2>
+      <div class="heading-underline animeClass animeScaleIn"></div>
+      <p class="animeClass animeScaleIn">Prohlédněte si projekty, na kterých jsem pracoval od začátku až do
+        samotného konce.</p>
+      <div class="row">
+        <div class="col-12 col-lg-6 projektCol">
+          <a href="https://www.autoskolalodenice.cz/" target="_blank">
+            <div class="animeClass animeFromBottom projekt" target="_blank">
+              <div class="projektNaheld">
+                <div><img src="projects/autoskolalodenice.png" alt="Autoskola Lodenice"
+                    class="projektNahledImg img-fluid"></div>
+                <div class="projektJmenoDiv">
+                  <div>
+                    <h5 class="projektJmeno">Autoškola Loděnice</h5>
+                  </div>
+                  <div class="sipkaOdkaz">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-lg-6 projektCol">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=======KONTAKT=======-->
+  <section id="kontakt" class="sudy page-section">
+    <div class="container">
+      <h2 class="kontaktTitle animeClass animeScaleIn">Kontakt</h2>
+      <div class="heading-underline animeClass animeScaleIn"></div>
+      <p class="kontaktText animeClass animeFromBottomc">Máte nějaký dotaz, nebo chcete mít web dle vašich představ?</p>
+      <div class="kontaktDiv animeClass animeFromBottom">
+        <div class="contactForm animeClass animeScaleIn">
+          <div class="contactFormContent"></div>
+          <div class="row">
+            <div class="col-12 col-lg-8 contactFormLeft">
+              <h2>Napište!</h2>
+              <form name="form1" action="/php/mail.php" class="" method="post">
+                <div class="mb-3 mt-3">
+                  <input type="text" name="name" class="form-item" placeholder="Vaše jméno" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="mail" class="form-item" placeholder="Váš email" required>
+                </div>
+                <div class="mb-3">
+                  <input type="text" name="subject" class="form-item" placeholder="Předmět" required>
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" rows="13" class="form-item" placeholder="Vaše zpráva" required></textarea>
+                </div>
+                <button type="submit" name="submit" class="button"
+                  onclick="ValidateEmail(document.form1.mail)">Odeslat</button>
+              </form>
+            </div>
+            <div class="col-12 col-lg-4 mt-3 p-3 contactFormRight">
+              <div class="contactFormRightInner">
+                <span class=""><img src="img/logoNew.png" class="contactLogo" alt="logo"></span>
+                <div class="contactFormRightText">
+                  <div>
+                    <h3>Kde se můžeme potkat?</h3>
+                    <p>Kdekoliv v okolí Prahy a Berouna, však pokud vy Vám tyto možnosti nevyhovovaly, vždy si můžeme
+                      domluvit schůzku ONLINE.</p>
+                  </div>
+                  <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-12">
+                      <div>
+                        <h3>Email</h3>
+                        <span class="ikona">
+                          <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <a href="mailto:jiri.patejdl@gmail.com">
+                          <span class="iconText">jiri.patejdl@gmail.com</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                      <div class="conctactFromSocials">
+                        <h3>Sociální Sítě</h3>
+                        <div class="socialIcons">
+                          <span class="ikona">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                          </span>
+                          <span class="ikona">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                          </span>
+                          <span class="ikona">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=======FOOTER=======-->
+  <footer>
+    <div class="container footerDiv">
+      <p>Všechna práva vyhrazena. © 2022</p>
+    </div>
+  </footer>
+  <!--Icons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- jQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!--KuteJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+  <script>
+    const tween = KUTE.fromTo(
+      '#blob1', {
+        path: '#blob1'
+      }, {
+        path: '#blob2'
+      }, {
+        repeat: 999,
+        duration: 5000,
+        yoyo: true
+      }
+    ).start();
+    const tween2 = KUTE.fromTo(
+      '#blob1Right', {
+        path: '#blob1Right'
+      }, {
+        path: '#blob2Right'
+      }, {
+        repeat: 999,
+        duration: 5000,
+        yoyo: true
+      }
+    ).start();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <!--My Scripts-->
+  <script type="text/javascript" src="js/navlinkAnimation.js"></script>
+  <script type="text/javascript" src="js/animace.js"></script>
+  <script type="text/javascript" src="js/emailcheck.js"></script>
+  <!--Smooth Scroll-->
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      header: '[data-scroll-header]'
+    });
+  </script>
+  <!--Close navbar on small devices when clicking somewhere else / on navlink-->
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.closest('#navigation') === null) {
+        $(".navbar-collapse").collapse('hide');
+      }
+    });
+    $('.navbar-collapse a').click(function () {
+      $(".navbar-collapse").collapse('hide');
+    });
+  </script>
+  <!--Remove Hast from the link-->
+  <script>
+    // when the DOM is ready
+    $(document).ready(function () {
+      // get the anchor link buttons
+      const menuBtn = $('.navHash');
+      // when each button is clicked
+      menuBtn.click(() => {
+
+        setTimeout(() => {
+
+          removeHash();
+        }, 1);
+      });
+
+      function removeHash() {
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
+          .search);
+      }
+    });
+  </script>
+</body>
+
+</html>

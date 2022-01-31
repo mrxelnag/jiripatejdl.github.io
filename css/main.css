@@ -1,0 +1,624 @@
+:root {
+
+    /*Fonts*/
+    --default-font: 'Oswald', sans-serif;
+    --navbar-font: 'Montserrat', sans-serif;
+    /*Colours*/
+    --main-text-color: #ffff;
+    --off-text-color: #000004;
+    --clr-icons: #000004;
+    --clr-navlink-active-text: #F3FCEE;
+    --clr-navlink-text: #D64045;
+    --bg-navbar: rgba(1, 9, 18, 0.8);
+    --bg-sudy: #F3FCEE;
+   
+   /* --bg-lichy: rgb(12, 98, 145);*/
+    --bg-lichy: rgb(10, 35, 66);
+    --bg-section-splitter: rgb(0, 0, 0);
+    --bg-footer: rgb(39, 36, 36);
+    --logo-clr-blue: #004F98;
+    --logo-clr-pink: #D64045;
+    scroll-behavior: auto !important; 
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    border-bottom: 0.4em solid var(--bg-section-splitter);
+}
+
+footer {
+    background: var(--bg-footer);
+    color: var(--bg-sudy);
+}
+.lichy {
+    background: var(--bg-lichy);
+}
+.sudy {
+    background: var(--bg-sudy);
+}
+.sudy p {
+    color: var(--off-text-color);
+}
+
+.lichy p {
+    color: var(--main-text-color)
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+ion-icon {
+    font-size: 7rem;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: var(--bg-navbar);
+    border-bottom: 0.2em solid var(--bg-section-splitter);
+    font-family: var(--navbar-font);
+    font-size: 2rem;
+    position: fixed;
+}
+
+.nav-link {
+
+    color: var(--clr-navlink-text);
+    text-shadow: 1px 1px black;
+    font-weight: 1000;
+}
+
+.navbar li {
+    padding-inline: 0.45em;
+}
+
+.nav-link:focus, .active {
+    color: var(--clr-navlink-active-text) !important;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.nav-link:hover {
+    color: var(--clr-navlink-active-text)
+}
+
+.navIcon img {
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.navbar-toggler {
+    text-align: right;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navLogo {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/*HOMEPAGE*/
+#homepage {
+    height: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+    position: relative;
+    
+}
+.homepageGrid {
+    align-items: center;
+    height: 100%;
+    
+}
+.profileText h1 {
+    color: var(--main-text-color);
+    font-size: 8rem;
+    text-shadow: 2px 1px black;
+    white-space: nowrap;
+}
+
+.profileText h4 {
+    color: var(--clr-navlink-text);
+    font-size: 2.25rem;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+}
+
+.profileText2 {
+    padding-top: 1em;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 60em;
+    font-weight: 500;
+}
+
+
+.profilePicture {
+    border-right: 0.5em solid black;
+    position: relative;
+    z-index: 1;
+}
+.profilePicture img {
+    border: 0.5em solid black;
+    border-radius: 10%;
+    z-index: 1;
+}
+
+/*Dovednosnti*/
+.dovednostiRow {
+    padding: 1em;
+}
+
+#dovednosti {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 5em 0em 5em 0em;
+}
+
+
+#dovednosti h2 {
+    color: var(--off-text-color);
+}
+
+#dovednosti p {
+    color: var(--off-text-color);
+}
+
+.dovednost {
+    padding-bottom: 3em;
+}
+
+.dovednost h3 {
+    
+    font-weight: bold;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+
+}
+
+.dovednostiText {
+    justify-content: center;
+    margin: auto;
+    max-width: 80em;
+}
+
+.dovednostObsah p {
+    text-align: left;
+    padding: 0 1em 0 1em;
+}
+
+#dovednosti .heading-underline {
+    background-color: var(--bg-lichy);
+    width: min(20vw, 30em);
+
+}
+
+#dovednosti ion-icon {
+    transition-duration: 1.5s;
+    font-weight: bold;
+}
+
+#dovednosti ion-icon:hover {
+    color: var(--bg-lichy);
+}
+
+/*Projekty*/
+#projekty {
+    color: var(--main-text-color);
+    padding: 5em 0em 8em 0em;
+    text-align: center;
+}
+
+#projekty h2 {
+    text-shadow: 2px 1px black;
+}
+
+#projekty .heading-underline {
+    background-color: var(--off-text-color);
+    width: 10em;
+}
+
+.projektNaheld {
+    position: relative;
+}
+
+.projektCol {
+    margin-bottom: 1.5em;
+}
+
+.projekt {
+    border: 0.3em solid black;
+}
+
+.projektJmenoDiv {
+    position: absolute;
+    bottom: 0px;
+    height: 15%;
+    width: 100%;
+    padding: 0.5em 0 0em 0;
+    background: rgba(37, 38, 39, 0.87);
+    transition: height 1.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projekt:hover .projektJmenoDiv {
+    height: 100%;
+
+}
+
+.projektJmeno {
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    transition: 1.2s;
+    padding-bottom: 0px;
+}
+
+.projekt:hover .projektJmeno {
+    font-size: 4rem;
+    padding-bottom: 2em;
+}
+
+.sipkaOdkaz {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    opacity: 0;
+    margin-top: 0em;
+    transition: 1.2s;
+
+}
+
+.sipkaOdkaz ion-icon {
+    font-size: 6em;
+    color: var(--main-text-color);
+}
+
+.projekt:hover .sipkaOdkaz {
+    opacity: 1;
+    margin-top: 3em;
+}
+
+/*Kontakt*/
+.kontaktDiv {
+    padding-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kontakt {
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+}
+
+
+#kontakt .heading-underline {
+    width: min(20vw, 9em);
+    background-color: var(--bg-lichy);
+}
+
+.kontaktTitle {
+    text-align: center;
+}
+
+.kontaktText {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.kontaktDiv ion-icon {
+    font-size: 3rem;
+    color: var(--off-text-color);
+}
+
+.ikona {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconText {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    color: var(--off-text-color);
+}
+
+/*Contact form*/
+.contactForm {
+    font-family: var(--default-font);
+    padding: 1em 5em 3em 5em;
+
+    background-color: var(--bg-lichy);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.74);
+    color: var(--main-text-color);
+
+}
+
+.contactForm p {
+    color: var(--main-text);
+}
+
+.contactForm h3 {
+    color: var(--clr-navlink-text);
+    font-size: 2.5em;
+}
+
+.contactForm .iconText {
+    color: var(--main-text-color);
+}
+
+.contactForm ion-icon {
+    color: var(--main-text-color);
+}
+
+.contactFormContent {
+    display: flex;
+    flex-direction: horizontal;
+
+}
+
+.contactFormLeft {
+    padding-right: 3rem;
+}
+
+.contactFormRightInner {
+    padding-left: 2rem;
+}
+
+.contactFormRight {
+    border-left: 3px solid rgba(87, 115, 153, 0.672);
+    flex-direction: column;
+}
+
+.contactLogo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.contactFormRightText {
+    text-align: left;
+}
+
+.contactForm .button {
+    margin: auto;
+    border-radius: none;
+    border: none;
+    background-color: var(--bg-sudy);
+    color: var(--off-text-color);
+    width: 100%;
+    font-size: 2rem;
+
+}
+
+.contactForm h3 {
+    padding: 1.2em 0 0.5em 0;
+}
+
+.conctactFromSocials span {
+    padding: 0 2em 0 0em
+}
+
+#kontakt ion-icon {
+    transition-duration: 1.5s;
+    font-weight: bold;
+}
+
+#kontakt ion-icon:hover {
+    color: var(--clr-navlink-text);
+    scale: 1.2;
+
+}
+
+.form-item {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 1rem 1rem 1rem 1rem;
+    color: var(--main-text-color);
+    border: none;
+    border-bottom: 2px solid rgba(87, 115, 153, 0.5)
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1;
+    /* Firefox */
+    font-size: 1.5rem;
+}
+
+
+
+/*Footer*/
+.footerDiv {
+    padding-top: 1em;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+/*Globání pro projekt*/
+.heading-underline {
+    margin: 0 auto;
+    display: block;
+    height: 0.3em;
+    width: 15em;
+    background: #000004;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+}
+
+.imgResponsive {
+    margin: auto;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.bgAnimace-left {
+    position: absolute;
+    top: 50%;
+    left: -50em;
+    z-index: -1;
+}
+
+.bgAnimace-right {
+    position: absolute;
+    top: 30%;
+    right: -50em;
+    z-index: -1;
+}
+
+.splitSection {
+    height: 10vh;
+    padding: 0;
+    background-color: black;
+    background-image: url(../img/bgSekce2.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+/*
+.waveTop{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    top: 0;
+}
+.waveBottom{
+    position: absolute;  
+    width: 100%;
+    bottom: 0;
+}
+*/
+
+/*Změna jazyka*/
+
+/*Responsivita*/
+@media (max-width: 769px) {
+
+    .profilePicture {
+        border-right: none;
+    }
+
+    .heroSection {
+        padding-top: 3em;
+    }
+
+    .homepageGrid {
+        padding-right: 0;
+        padding-left: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        align-items: center;
+    }
+    .profilePicture {
+        border-right: none;
+    }
+
+    .dovednostObsah p {
+        text-align: center;
+    }
+
+    .contactFormRight {
+        border: none;
+
+    }
+
+    .contactFormLeft .button {
+        margin-bottom: 1em;
+    }
+
+    .contactLogo {
+        max-height: 8rem;
+        max-width: 8rem;
+    }
+    .contactFormRightText{
+        text-align: center;
+    }
+   
+    .conctactFromSocials span {
+        padding: 0 1em 0 1em
+    }
+
+    .contactForm {
+        padding: 2em;
+    }
+
+    .contactFormRightInner {
+        padding: 0;
+    }
+
+    .contactFormLeft {
+        padding: 0;
+    }
+
+    .profileText h1 {
+        font-size: min(8em, 20vw)
+    }
+
+}
+
+@media (max-width: 1650px) {
+    .cornerSvgs {
+        display: none;
+    }
+}
+
+
