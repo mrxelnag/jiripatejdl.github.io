@@ -127,7 +127,6 @@ ion-icon {
 }
 .homepageGrid {
     align-items: center;
-    height: 100%;
     
 }
 .profileText h1 {
@@ -160,11 +159,14 @@ ion-icon {
     border-right: 0.5em solid black;
     position: relative;
     z-index: 1;
+    
 }
-.profilePicture img {
+.profilePictureImg {
     border: 0.5em solid black;
-    border-radius: 10%;
     z-index: 1;
+    border-radius: 10%;
+
+    
 }
 
 /*Dovednosnti*/
@@ -240,7 +242,7 @@ ion-icon {
 }
 
 #projekty .heading-underline {
-    background-color: var(--off-text-color);
+    background-color: var(--main-text-color);
     width: 10em;
 }
 
@@ -491,7 +493,7 @@ button:focus {
     display: block;
     height: 0.3em;
     width: 15em;
-    background: #000004;
+    background: var(--main-text-color);
     margin-top: 0.8em;
     margin-bottom: 1em;
 }
@@ -611,6 +613,9 @@ button:focus {
 
     .profileText h1 {
         font-size: min(8em, 20vw)
+    }
+    .projektJmeno{
+        font-size: 1.5em;
     }
 
 }
