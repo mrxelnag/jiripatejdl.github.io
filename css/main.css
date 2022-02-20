@@ -8,7 +8,9 @@
     --off-text-color: #000004;
     --clr-icons: #000004;
     --clr-navlink-active-text: #F3FCEE;
-    --clr-navlink-text: #D64045;
+    /*  */
+    /* --clr-navlink-text: #D64045; */
+    --clr-navlink-text: #6aa7f8;
     --bg-navbar: rgba(1, 9, 18, 0.8);
     --bg-sudy: #F3FCEE;
    
@@ -17,7 +19,8 @@
     --bg-section-splitter: rgb(0, 0, 0);
     --bg-footer: rgb(39, 36, 36);
     --logo-clr-blue: #004F98;
-    --logo-clr-pink: #D64045;
+    /* --logo-clr-pink: #D64045; */
+    --logo-clr-lightBlue: #6aa7f8;
     scroll-behavior: auto !important; 
 }
 
