@@ -52,16 +52,17 @@
 
 
 <body>
+  
   <!--=======NAVBAR=======-->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" id="navigation" data-scroll-header>
       <div class="container">
         <a class="navHash" href="#homepage">
-          <span class=""><img src="img/logoNew.png" class="navLogo" alt="logo"></span>
+          <span class=""><img src="img/logoLightBlue.png" class="navLogo" alt="logo"></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navIcon"><img src="img/hamburgerBlue.png" alt="navigační Icona"></span>
+          <span class="navIcon"><img src="img/hamburgerLightBlue.png" alt="navigační Icona"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -151,7 +152,7 @@
               <span class="ikona">
                 <ion-icon name="desktop-outline"></ion-icon>
               </span>
-               <!--Předělat-->
+              <!--Předělat-->
               <h3 class="dovednostNadpis">Webdesign - BASIC</h3>
               <p>Chcete li jednoduchou stránku pro Vaši službu, tak služba "Webdesign - BASIC" je to ideální pro Vás.
                 Připravím jednoduchou stránku,
@@ -164,7 +165,7 @@
               <span class="ikona">
                 <ion-icon name="code-slash-outline"></ion-icon>
               </span>
-               <!--Předělat-->
+              <!--Předělat-->
               <h3 class="dovednostNadpis">Webdesign - PRO</h3>
               <p>Pokud provozujete větší byznys, jako je například restaurace či hotel, bude pro Vás služba "Webdesign -
                 PRO"
@@ -461,6 +462,7 @@
           removeHash();
         }, 1);
       });
+
       function removeHash() {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
           .search);

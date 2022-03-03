@@ -32,6 +32,7 @@ html {
 
 body {
     position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -62,6 +63,7 @@ p {
 
 h2 {
     font-size: 4rem;
+    font-weight: 700;
 }
 
 ion-icon {
@@ -135,6 +137,7 @@ ion-icon {
 .profileText h1 {
     color: var(--main-text-color);
     font-size: 8rem;
+    font-weight: 600;
     text-shadow: 2px 1px black;
     white-space: nowrap;
 }
@@ -241,6 +244,7 @@ ion-icon {
 }
 
 #projekty h2 {
+    
     text-shadow: 2px 1px black;
 }
 
@@ -534,6 +538,8 @@ button:focus {
     background-size: 100%;
 
 }
+/* Loader */
+
 /*
 .waveTop{
     position: absolute;
